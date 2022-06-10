@@ -114,7 +114,7 @@ module.exports = {
     }),
     new webpack.EnvironmentPlugin({
       NODE_ENV: "development",
-      RISE_CANISTER_ID: canisters["rise"],
+      _PROJECT_CANISTER_ID: canisters["_project"],
       PROJECT_ASSETS_CANISTER_ID: canisters["project_assets"],
       ledger_canister
       II_URL
