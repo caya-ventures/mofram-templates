@@ -17,7 +17,7 @@ const App = () => {
         <Router>
             <Header/>
             <MainLayout>
-                <Route path="/" exact component={Home}/>
+                <Route path="/" element={Home}/>
             </MainLayout>
             <Footer/>
             <GlobalStyles/>

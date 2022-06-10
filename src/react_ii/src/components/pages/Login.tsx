@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import styled from 'styled-components';
 import { AppContext } from '../../context';
-import { useHistory, Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import LoginLink from '../layout/navigation/LoginLink';
 import { baseTheme } from '../../styles/theme';
 
@@ -19,7 +19,7 @@ const LoginPage = styled.div`
 
 const Login = () => {
     const { isAuthenticated } = useContext(AppContext);
-    const history = useHistory();
+    const history = useNavigate();
 
     useEffect(() => {
         if (isAuthenticated) {
