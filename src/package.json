@@ -16,9 +16,6 @@
     "copy:types": "rsync -avr .dfx/$(echo ${DFX_NETWORK:-'**'})/canisters/** --exclude='assets/' --exclude='idl/' --exclude='*.wasm' --delete src/declarations"
   },
   "devDependencies": {
-    "@dfinity/agent": "0.11.2",
-    "@dfinity/candid": "0.11.2",
-    "@dfinity/principal": "0.11.2",
     "@svgr/webpack": "^5.5.0",
     "@types/react": "^17.0.18",
     "@types/react-copy-to-clipboard": "^5.0.2",
@@ -56,8 +53,6 @@
     "last 2 edge version"
   ],
   "dependencies": {
-    "@dfinity/authentication": "^0.11.2",
-    "@dfinity/identity": "^0.11.2",
     "@types/react-router-dom": "^5.3.3",
     "local-storage": "^2.0.0",
     "node-sass": "^7.0.1",
