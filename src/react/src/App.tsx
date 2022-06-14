@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header, Footer } from './components/layout';
 import { Home } from './components/pages';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import GlobalStyles from './styles/global';
 import styled from "styled-components";
 
@@ -17,7 +17,9 @@ const App = () => {
         <Router>
             <Header/>
             <MainLayout>
-                <Route path="/" element={Home}/>
+                <Routes>
+                    <Route path="/" element={<Home/>}/>
+                </Routes>
             </MainLayout>
             <Footer/>
             <GlobalStyles/>
