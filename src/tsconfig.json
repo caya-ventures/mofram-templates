@@ -3,6 +3,7 @@
     "allowJs": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
     "jsx": "react",
     "lib": [
       "ES2020",
